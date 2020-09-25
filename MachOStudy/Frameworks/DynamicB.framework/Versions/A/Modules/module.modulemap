@@ -1,0 +1,6 @@
+framework module DynamicB {
+  umbrella header "DynamicB.h"
+
+  export *
+  module * { export * }
+}
