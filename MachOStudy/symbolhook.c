@@ -74,7 +74,7 @@ static vm_prot_t get_protection(void *sectionStart) {
 }
 
 static void perform_rebinding_with_section(struct rebinding *rebind, section_t *section, intptr_t slide, nlist_t *symtab, char *strtab, uint32_t *indirect_symtab) {
-    const bool isDataConst = strcmp(section->sectname, "__DATA_CONST") == 0;
+    const bool isDataConst = strcmp(section->segname, "__DATA_CONST") == 0;
     
     // symbol in indirect_symbol section and binding data section has same indice
     // section's reserved1 reserved (for offset or index)
