@@ -11,6 +11,8 @@
 		544780EE251E0BFF00A2FB9F /* symbolhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 544780EC251E0BFF00A2FB9F /* symbolhook.c */; };
 		544780F7251E0D3300A2FB9F /* DynamicB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544780F6251E0D3300A2FB9F /* DynamicB.framework */; };
 		544780FC251E0F4400A2FB9F /* DynamicB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 544780F6251E0D3300A2FB9F /* DynamicB.framework */; };
+		5447817F25217B1700A2FB9F /* CallStackSymbol.c in Sources */ = {isa = PBXBuildFile; fileRef = 5447817B25217B1600A2FB9F /* CallStackSymbol.c */; };
+		5447818025217B1700A2FB9F /* CallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5447817C25217B1600A2FB9F /* CallStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,10 @@
 		544780EC251E0BFF00A2FB9F /* symbolhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = symbolhook.c; sourceTree = "<group>"; };
 		544780ED251E0BFF00A2FB9F /* symbolhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symbolhook.h; sourceTree = "<group>"; };
 		544780F6251E0D3300A2FB9F /* DynamicB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DynamicB.framework; sourceTree = "<group>"; };
+		5447817B25217B1600A2FB9F /* CallStackSymbol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CallStackSymbol.c; sourceTree = "<group>"; };
+		5447817C25217B1600A2FB9F /* CallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallStack.m; sourceTree = "<group>"; };
+		5447817D25217B1600A2FB9F /* CallStackSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallStackSymbol.h; sourceTree = "<group>"; };
+		5447817E25217B1700A2FB9F /* CallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		544780E2251E0BBD00A2FB9F /* MachOStudy */ = {
 			isa = PBXGroup;
 			children = (
+				5447817A25217B0200A2FB9F /* CallStack */,
 				544780F5251E0D1E00A2FB9F /* Frameworks */,
 				544780E3251E0BBD00A2FB9F /* main.m */,
 				544780EC251E0BFF00A2FB9F /* symbolhook.c */,
@@ -79,6 +86,17 @@
 				544780F6251E0D3300A2FB9F /* DynamicB.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		5447817A25217B0200A2FB9F /* CallStack */ = {
+			isa = PBXGroup;
+			children = (
+				5447817E25217B1700A2FB9F /* CallStack.h */,
+				5447817C25217B1600A2FB9F /* CallStack.m */,
+				5447817B25217B1600A2FB9F /* CallStackSymbol.c */,
+				5447817D25217B1600A2FB9F /* CallStackSymbol.h */,
+			);
+			path = CallStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5447818025217B1700A2FB9F /* CallStack.m in Sources */,
+				5447817F25217B1700A2FB9F /* CallStackSymbol.c in Sources */,
 				544780EE251E0BFF00A2FB9F /* symbolhook.c in Sources */,
 				544780E4251E0BBD00A2FB9F /* main.m in Sources */,
 			);

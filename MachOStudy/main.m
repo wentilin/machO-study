@@ -8,12 +8,14 @@
 #import <Foundation/Foundation.h>
 #import "symbolhook.h"
 #include <DynamicB/b.h>
+#include "CallStack.h"
 
 extern int global_var;
 static void (*origin_func)(int a);
 
 void func(int a) {
     printf("here is a: %d\n", a);
+    NSLog(@"%@", [CallStack callStackWith:CallStackTypeAll]);
 }
 
 int main(int argc, const char * argv[]) {
